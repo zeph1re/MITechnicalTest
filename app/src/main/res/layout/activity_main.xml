@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transform Text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        />
+
+    <TextView
+        android:id="@+id/inputCharacterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Character"
+        android:layout_below="@id/title"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editTextInputChar"
+        android:hint="G,A,N,D,A,S"
+        android:layout_below="@id/inputCharacterText"
+        />
+
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInputLayoutChar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/inputCharacterText"-->
+<!--        android:hint="G,A,N,D,A,S"-->
+<!--        android:textColorHint="@color/material_dynamic_neutral70"-->
+<!--        android:layout_marginBottom="8dp">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextInputChar"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <TextView
+        android:id="@+id/inputOperatorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input Operator"
+        android:layout_below="@id/editTextInputChar"/>
+
+
+    <EditText
+        android:id="@+id/editTextInputOperator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="H,V,H,5,V,-12"
+        android:layout_below="@id/inputOperatorText"/>
+
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInputLayoutOperator"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="H,V,H,5,V,-12"-->
+<!--        android:textColorHint="@color/material_dynamic_neutral70"-->
+<!--        android:layout_below="@id/inputOperatorText"-->
+<!--        android:layout_marginBottom="8dp">-->
+
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/editTextInputOperator"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"/>-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:layout_below="@id/editTextInputOperator"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="result"
+        android:textSize="20sp"
+        android:layout_below="@id/resultText"
+        android:layout_marginVertical="16dp"
+        android:gravity="center_horizontal"/>
+
+
+    <Button
+        android:id="@+id/transformButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transform"
+        android:layout_below="@id/result"
+        android:layout_marginVertical="24dp"
+        />
+
+
+
+
+</RelativeLayout>
